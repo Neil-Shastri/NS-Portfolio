@@ -179,6 +179,8 @@ section {
 .section__text {
   align-self: center;
   text-align: center;
+  display: inline-block;
+
 }
 
 .section__text p {
@@ -195,6 +197,27 @@ section {
   font-size: 1.25rem;
   font-family: 'Courier New', Courier, monospace;
   margin-bottom: 1rem;
+}
+
+.section__text__type {
+  font-size: 1.4rem;
+  font-family: 'Courier New', Courier, monospace;
+  display: inline-block;
+  border-right: 3px solid;
+  width: 54%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+      typing 4s steps(15),
+      cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% { border-color: transparent;}
+}
+
+@keyframes typing {
+  from { width: 0 }
 }
 
 .title {
@@ -371,7 +394,8 @@ article .icon {
 .project-img {
   border-radius: 2rem;
   width: 90%;
-  height: 90%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .project-title {
@@ -382,6 +406,25 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+/*see more button*/
+.see-more-container {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.see-more-btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background-color: rgb(53, 53, 53); /* Adjust hover color */
 }
 
 /* CONTACT */
@@ -424,13 +467,33 @@ article .icon {
   height: 2.5rem;
 }
 
+/* styles.css (or your preferred CSS file) */
+
+/* Add styles for centering the image above the footer */
+.image-above-footer {
+  width: 8%;              /* Make the image span the full width */
+  max-width: 1200px;        /* Optional: restrict the max width */
+  height: auto;             /* Maintain aspect ratio */
+  display: block;           /* Make the image a block element */
+  margin: 30px auto;        /* Center the image and add space around it */
+}
+
 /* FOOTER SECTION */
 
 footer {
+  margin-top: -140px;
   height: 26vh;
-  margin: 0 1rem;
 }
 
 footer p {
   text-align: center;
+}
+
+
+.coding-gif {
+  border-radius: 2rem;
+  width: 260px;
+  height: 175px;
+  margin-left: -60px;
+  margin-top: 100px;
 }
