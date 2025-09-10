@@ -148,6 +148,28 @@ a:hover {
 
 /* SECTIONS */
 
+.edu-block {
+  margin-top: 18px;  /* space between UIUC, coursework, and involvement */
+  line-height: 1.6;
+}
+
+.linkedin-blurb {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 1rem;
+  color: #555; /* subtle gray text */
+}
+
+.linkedin-blurb a {
+  color: #0077b5; /* LinkedIn blue */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.linkedin-blurb a:hover {
+  text-decoration: underline;
+}
+
 section {
   padding-top: 4vh;
   height: 96vh;
