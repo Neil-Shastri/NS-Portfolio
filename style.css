@@ -402,6 +402,109 @@ article .icon {
   cursor: default;
 }
 
+/* INTERNSHIP CARDS */
+
+.internship-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.internship-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 1rem;
+  border: 1px solid rgb(200, 200, 200);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.internship-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.internship-logo {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid rgb(220, 220, 220);
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.internship-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.internship-content {
+  flex: 1;
+  text-align: left;
+}
+
+.internship-position {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.internship-company {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.internship-date {
+  font-size: 0.9rem;
+  color: #444;
+  font-weight: 600;
+  margin: 0;
+}
+
+.internship-location {
+  font-size: 0.85rem;
+  color: #777;
+  font-style: italic;
+  margin: 0 0 0.75rem 0;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tech-tag {
+  background: linear-gradient(135deg, #e3e3e3 0%, #f2f2f2 100%);
+  color: rgb(0, 0, 0);
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tech-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(71, 71, 71, 0.4);
+}
+
 /* PROJECTS SECTION */
 
 #projects {
