@@ -316,6 +316,164 @@ section {
   position: relative;
 }
 
+.about-section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* About Bio Card */
+.about-bio-card {
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 1rem;
+  border: 1px solid rgb(200, 200, 200);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.about-bio-card h4 {
+  font-size: 1rem;
+  color: #555;
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.about-bio-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+  margin: 0;
+}
+
+/* Education Card */
+.education-card {
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 1rem;
+  border: 1px solid rgb(200, 200, 200);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.education-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.education-header .icon {
+  width: 50px;
+  height: 50px;
+}
+
+.education-title h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 0 0 0.25rem 0;
+}
+
+.education-title p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Coursework Section */
+.coursework-section {
+  margin-bottom: 1.5rem;
+}
+
+.coursework-section h4,
+.involvement-section h4 {
+  font-size: 1rem;
+  color: #555;
+  margin: 0 0 0.75rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.gpa-badge {
+  background: rgb(19,41,75);
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.course-tag {
+  background: #e8e8e8;
+  color: #444;
+  padding: 0.4rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.course-tag:hover {
+  background: #d0d0d0;
+  transform: translateY(-2px);
+}
+
+.course-tag.in-progress {
+  background: linear-gradient(135deg, #e3e3e3 0%, #f2f2f2 100%);
+  color: black;
+}
+
+.course-tag.in-progress:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Involvement Section */
+.involvement-section {
+  margin-top: 1.5rem;
+}
+
+.involvement-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.involvement-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f5f5f5;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgb(220, 220, 220);
+}
+
+.involvement-name {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.involvement-role {
+  font-size: 0.8rem;
+  color: white;
+  background: rgb(19,41,75);
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+}
+
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;

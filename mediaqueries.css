@@ -128,4 +128,40 @@
   .tech-tag {
     font-size: 0.75rem;
   }
+  
+  /* About section responsive */
+  .about-section-container {
+    flex-direction: column;
+  }
+  .about-bio-card {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .about-bio-text {
+    font-size: 0.95rem;
+  }
+  .education-card {
+    padding: 1.5rem;
+  }
+  .education-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .education-title h3 {
+    font-size: 1.1rem;
+  }
+  .course-tags {
+    justify-content: center;
+  }
+  .course-tag {
+    font-size: 0.8rem;
+  }
+  .involvement-list {
+    justify-content: center;
+  }
+  .involvement-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.25rem;
+  }
 }
