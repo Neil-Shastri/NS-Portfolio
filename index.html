@@ -258,107 +258,190 @@
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+      <div class="projects-accordion">
+        
+        <!-- Project 7: Backtester (Most Recent) -->
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(0)">
+            <div class="header-top">
+              <h3 class="accordion-title">Backtester</h3>
+              <p class="accordion-date">Aug 2025 - Dec 2025</p>
             </div>
-            <h2 class="experience-sub-title project-title">Personal Website</h2>
-              <p class="project-description">
-                An online portfolio where you can take a look at my resume, explore my projects / experience, 
-                and get in touch with me. Feel free to give feedback as I am always looking to improve.
-              </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/Neil-Shastri/NS-Portfolio', '_blank')">
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://youtu.be/dD12aw5KYug?si=YDgr_J0FPHoZ0GZ0', '_blank')"
-              >
-                Truth
+            <div class="header-bottom">
+              <p class="tech-stack-text">Python, CI/CD</p>
+              <span class="accordion-icon">+</span>
+            </div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-images">
+              <img src="./assets/Projects/7.1.backtester.png" alt="Backtester Project" />
+              <img src="./assets/Projects/7.2.backtester.png" alt="Backtester Project" />
+            </div>
+            <p class="accordion-description">IE 421 Project Backtesting CI</p>
+            <div class="accordion-btn-container">
+              <button class="btn btn-color-2 project-card-btn" onclick="window.open('', '_blank')">
+                Link
               </button>
             </div>
           </div>
-
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">AI Chatbot</h2>
-              <p class="project-description">
-                A RAG chatbot that delivers real-time ticketing data to customers and resellers. Built for a Chicago 
-                brokerage company and developed alongside 7 engineers at CUBE Consulting.
-              </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://www.cubeconsulting.org/', '_blank')"
-              >
-                CUBE
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://www.ticketattendant.com/', '_blank')"
-              >
-                ta
-              </button>
-            </div>
-          </div>
-
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Job Wire</h2>
-              <p class="project-description">
-                An automatic messaging system for users to filter and find recent job postings. Built for 
-                Software Design Lab along with 3 engineers at the University of Illinois at Urbana-Champaign.
-              </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://docs.google.com/presentation/d/1ngacH_M0d2ToEoWLYp3hKze1KngD-62uYdtPulQrH0E/edit?usp=sharing', '_blank')"
-              >
-                Proposal
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://www.apijobs.dev/', '_blank')"
-              >
-                API
-              </button>
-            </div>
-          </div>
-
-
-        </div>
-        <div class="see-more-container">
-          <button class="btn see-more-btn" onclick="window.open('https://github.com/Neil-Shastri', '_blank')">
-            See More
-          </button>
         </div>
 
-      
+        <!-- Project 6: Birthday Emailer -->
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(1)">
+            <div class="header-top">
+              <h3 class="accordion-title">Birthday Emailer</h3>
+              <p class="accordion-date">Jan 2025 - May 2025</p>
+            </div>
+            <div class="header-bottom">
+              <p class="tech-stack-text">Python, SMTP</p>
+              <span class="accordion-icon">+</span>
+            </div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-images">
+              <img src="./assets/Projects/6.1.birthdayemailer.png" alt="Birthday Emailer Project" />
+              <img src="./assets/Projects/6.2.birthdayemailer.jpg" alt="Birthday Emailer Project" />
+            </div>
+            <p class="accordion-description">Automated Birthday Email System</p>
+            <div class="accordion-btn-container">
+              <button class="btn btn-color-2 project-card-btn" onclick="window.open('', '_blank')">
+                Link
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: SkipTrip -->
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(2)">
+            <div class="header-top">
+              <h3 class="accordion-title">SkipTrip</h3>
+              <p class="accordion-date">Jan 2025 - May 2025</p>
+            </div>
+            <div class="header-bottom">
+              <p class="tech-stack-text">GCP, SQL, React</p>
+              <span class="accordion-icon">+</span>
+            </div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-images">
+              <img src="./assets/Projects/5.1.skiptrip.png" alt="SkipTrip Project" />
+              <img src="./assets/Projects/5.2.skiptrip.png" alt="SkipTrip Project" />
+            </div>
+            <p class="accordion-description">CS 411 SkipTrip Database Project using GCP</p>
+            <div class="accordion-btn-container">
+              <button class="btn btn-color-2 project-card-btn" onclick="window.open('', '_blank')">
+                Link
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: RAG -->
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(3)">
+            <div class="header-top">
+              <h3 class="accordion-title">RAG Chatbot</h3>
+              <p class="accordion-date">Aug 2024 - Dec 2024</p>
+            </div>
+            <div class="header-bottom">
+              <p class="tech-stack-text">Python, RAG, LLM</p>
+              <span class="accordion-icon">+</span>
+            </div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-images">
+              <img src="./assets/Projects/4.1.RAG.png" alt="RAG Chatbot Project" />
+              <img src="./assets/Projects/4.2.RAG.jpg" alt="RAG Chatbot Project" />
+            </div>
+            <p class="accordion-description">CUBE Consulting RAG Chatbot</p>
+            <div class="accordion-btn-container">
+              <button class="btn btn-color-2 project-card-btn" onclick="window.open('', '_blank')">
+                Link
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: JobWire -->
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(4)">
+            <div class="header-top">
+              <h3 class="accordion-title">JobWire</h3>
+              <p class="accordion-date">Aug 2024 - Dec 2024</p>
+            </div>
+            <div class="header-bottom">
+              <p class="tech-stack-text">Python, Web Scraping, API, SMTP</p>
+              <span class="accordion-icon">+</span>
+            </div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-images">
+              <img src="./assets/Projects/3.1.jobwire.png" alt="JobWire Project" />
+              <img src="./assets/Projects/3.2.jobwire.png" alt="JobWire Project" />
+            </div>
+            <p class="accordion-description">CS 221 Job Wire (Scraper/API/Emailing/SMTP)</p>
+            <div class="accordion-btn-container">
+              <button class="btn btn-color-2 project-card-btn" onclick="window.open('', '_blank')">
+                Link
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Netlify -->
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(5)">
+            <div class="header-top">
+              <h3 class="accordion-title">Netlify</h3>
+              <p class="accordion-date">Jan 2024 - May 2024</p>
+            </div>
+            <div class="header-bottom">
+              <p class="tech-stack-text">HTML, CSS, JavaScript</p>
+              <span class="accordion-icon">+</span>
+            </div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-images">
+              <img src="./assets/Projects/2.1.personalwebsite.png" alt="Netlify Project" />
+              <img src="./assets/Projects/2.2.personalwebsite.jpg" alt="Netlify Project" />
+            </div>
+            <p class="accordion-description">Personal Website</p>
+            <div class="accordion-btn-container">
+              <button class="btn btn-color-2 project-card-btn" onclick="window.open('', '_blank')">
+                Link
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 1: Lung (Oldest) -->
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(6)">
+            <div class="header-top">
+              <h3 class="accordion-title">Lung</h3>
+              <p class="accordion-date">Aug 2023 - Dec 2023</p>
+            </div>
+            <div class="header-bottom">
+              <p class="tech-stack-text">Python, Machine Learning, TensorFlow</p>
+              <span class="accordion-icon">+</span>
+            </div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-images">
+              <img src="./assets/Projects/1.1.Lung.jpg" alt="Lung Disease Prediction Model Project" />
+              <img src="./assets/Projects/1.2.Lung.png" alt="Lung Disease Prediction Model Project" />
+            </div>
+            <p class="accordion-description">CS 124H Lung Disease Prediction Model</p>
+            <div class="accordion-btn-container">
+              <button class="btn btn-color-2 project-card-btn" onclick="window.open('', '_blank')">
+                Link
+              </button>
+            </div>
+          </div>
+        </div>
+
       </div>
       <img
         src="./assets/arrow.png"
