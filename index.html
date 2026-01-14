@@ -60,13 +60,13 @@
         </div>
         <div id="socials-container">
           <img
-            src="./assets/linkedin.png"
+            src="./assets/Icons/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
             onclick="window.open('https://www.linkedin.com/in/neilshastri93/', '_blank')"
           />
           <img
-            src="./assets/github.png"
+            src="./assets/Icons/github.png"
             alt="My Github profile"
             class="icon"
             onclick="window.open('https://github.com/Neil-Shastri', '_blank')"
@@ -94,7 +94,7 @@
     <!-- Education Card -->
     <div class="education-card">
       <div class="education-header">
-        <img src="./assets/education.png" alt="Education icon" class="icon" />
+        <img src="./assets/Icons/education.png" alt="Education icon" class="icon" />
         <div class="education-title">
           <h3>University of Illinois at Urbana-Champaign</h3>
           <p>BS-MCS in Computer Science, Class of 2027</p>
@@ -148,7 +148,7 @@
   </div>
 
   <img
-    src="./assets/arrow.png"
+    src="./assets/Icons/arrow.png"
     alt="Arrow icon"
     class="icon arrow"
     onclick="location.href='./#experience'"
@@ -243,12 +243,12 @@
 
   <!-- Blurb outside of boxes -->
   <p class="linkedin-blurb">
-    Want to see my full career experiences? Check out my 
-    <a href="https://www.linkedin.com/in/neilshastri93/" target="_blank">LinkedIn</a>!
+    Connect with me on 
+    <a href="https://www.linkedin.com/in/neilshastri93/" target="_blank">LinkedIn</a> to ask more!
   </p>
 
   <img
-    src="./assets/arrow.png"
+    src="./assets/Icons/arrow.png"
     alt="Arrow icon"
     class="icon arrow"
     onclick="location.href='./#projects'"
@@ -258,17 +258,17 @@
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="projects-accordion">
+      <div class="projects-accordion" id="projectsContainer">
         
         <!-- Project 7: Backtester (Most Recent) -->
         <div class="accordion-item">
           <div class="accordion-header" onclick="toggleAccordion(0)">
             <div class="header-top">
-              <h3 class="accordion-title">Backtester</h3>
+              <h3 class="accordion-title">CI Backtester for Algorithmic Trading</h3>
               <p class="accordion-date">Aug 2025 - Dec 2025</p>
             </div>
             <div class="header-bottom">
-              <p class="tech-stack-text">Python, CI/CD</p>
+              <p class="tech-stack-text">Python, C++, Gitlab CI, Docker, Linux, Shell/Bash</p>
               <span class="accordion-icon">+</span>
             </div>
           </div>
@@ -277,10 +277,18 @@
               <img src="./assets/Projects/7.1.backtester.png" alt="Backtester Project" />
               <img src="./assets/Projects/7.2.backtester.png" alt="Backtester Project" />
             </div>
-            <p class="accordion-description">IE 421 Project Backtesting CI</p>
+            <p class="accordion-description">Leading a team of three other engineers, I built a fully automated 
+              CI/CD pipeline for algorithmic trading backtests using GitLab CI, Strategy Studio, and a containerized 
+              Linux runtime on macOS, enabling trading strategies to be automatically compiled, executed, and 
+              evaluated on historical market data whenever code is pushed or a job is manually triggered. By 
+              integrating Strategy Studio into GitLab CI through a self-hosted runner and container runtime, the 
+              system eliminates manual backtesting steps while ensuring results are reproducible, auditable, and 
+              consistent across team members, producing standardized performance artifacts (including .cra files, CSV 
+              exports, and logs) for offline review and analysis. This infrastructure mirrors professional quantitative 
+              research environments used in industry, where automation, determinism, and experiment traceability are critical.</p>
             <div class="accordion-btn-container">
-              <button class="btn btn-color-2 project-card-btn" onclick="window.open('', '_blank')">
-                Link
+              <button class="btn btn-color-2 project-card-btn" onclick="window.open('https://docs.google.com/presentation/d/12RzbBWrHUQ4ZqtoQnC85cpb_Xh_m2EIR5JSDhOD1VcQ/edit?usp=sharing', '_blank')">
+                More Info
               </button>
             </div>
           </div>
@@ -290,11 +298,11 @@
         <div class="accordion-item">
           <div class="accordion-header" onclick="toggleAccordion(1)">
             <div class="header-top">
-              <h3 class="accordion-title">Birthday Emailer</h3>
+              <h3 class="accordion-title">Automatic Birthday Emailer</h3>
               <p class="accordion-date">Jan 2025 - May 2025</p>
             </div>
             <div class="header-bottom">
-              <p class="tech-stack-text">Python, SMTP</p>
+              <p class="tech-stack-text">Python, SMTP, Google Forms, GCP</p>
               <span class="accordion-icon">+</span>
             </div>
           </div>
@@ -303,10 +311,16 @@
               <img src="./assets/Projects/6.1.birthdayemailer.png" alt="Birthday Emailer Project" />
               <img src="./assets/Projects/6.2.birthdayemailer.jpg" alt="Birthday Emailer Project" />
             </div>
-            <p class="accordion-description">Automated Birthday Email System</p>
+            <p class="accordion-description">I kept forgetting my friends' birthdays, so I built birthday emailing system, 
+              a Python project that automatically sends personalized birthday emails based on information collected 
+              through a Google Forms survey. The system integrates with Google Sheets to retrieve names, email 
+              addresses, and birthdates, checks the current date against stored birthdays, and sends customized 
+              email greetings to anyone celebrating that day. It was previously deployed on GCP for fully automated 
+              execution, but after discontinuing the service, the project is now designed to be easily set up with 
+              local crontab scheduling or run manually as needed.</p>
             <div class="accordion-btn-container">
-              <button class="btn btn-color-2 project-card-btn" onclick="window.open('', '_blank')">
-                Link
+              <button class="btn btn-color-2 project-card-btn" onclick="window.open('https://github.com/Neil-Shastri/Birthday-Emailer', '_blank')">
+                More Info
               </button>
             </div>
           </div>
@@ -316,11 +330,11 @@
         <div class="accordion-item">
           <div class="accordion-header" onclick="toggleAccordion(2)">
             <div class="header-top">
-              <h3 class="accordion-title">SkipTrip</h3>
+              <h3 class="accordion-title">SkipTrip: Cheap Airfare Platform</h3>
               <p class="accordion-date">Jan 2025 - May 2025</p>
             </div>
             <div class="header-bottom">
-              <p class="tech-stack-text">GCP, SQL, React</p>
+              <p class="tech-stack-text">Google Cloud Platform, SQL, React, REST API</p>
               <span class="accordion-icon">+</span>
             </div>
           </div>
@@ -329,10 +343,17 @@
               <img src="./assets/Projects/5.1.skiptrip.png" alt="SkipTrip Project" />
               <img src="./assets/Projects/5.2.skiptrip.png" alt="SkipTrip Project" />
             </div>
-            <p class="accordion-description">CS 411 SkipTrip Database Project using GCP</p>
+            <p class="accordion-description">SkipTrip is a full-stack cheap airfare platform built with Google Cloud 
+              Platform, SQL, React, and a REST API that allows users to search for flights between specific airports, 
+              compare prices across multiple airlines, and book tickets while enforcing realistic capacity constraints. 
+              The application supports user accounts, multi-ticket bookings, and persistent storage of saved flights, 
+              while using advanced SQL queries and database triggers to manage complex relationships between users, 
+              bookings, and flights. Additional features such as airport capacity limits and high-traffic airport indicators 
+              help users gauge demand and pricing, resulting in a practical system for estimating reasonable airfare and 
+              managing flight bookings.</p>
             <div class="accordion-btn-container">
-              <button class="btn btn-color-2 project-card-btn" onclick="window.open('', '_blank')">
-                Link
+              <button class="btn btn-color-2 project-card-btn" onclick="window.open('https://youtu.be/Xy8resXDC1U', '_blank')">
+                More Info
               </button>
             </div>
           </div>
@@ -342,11 +363,11 @@
         <div class="accordion-item">
           <div class="accordion-header" onclick="toggleAccordion(3)">
             <div class="header-top">
-              <h3 class="accordion-title">RAG Chatbot</h3>
+              <h3 class="accordion-title">RAG Chatbot for Ticket Attendant</h3>
               <p class="accordion-date">Aug 2024 - Dec 2024</p>
             </div>
             <div class="header-bottom">
-              <p class="tech-stack-text">Python, RAG, LLM</p>
+              <p class="tech-stack-text">Python, OpenAI Assisants API, SQL Server Management Studio</p>
               <span class="accordion-icon">+</span>
             </div>
           </div>
@@ -355,10 +376,14 @@
               <img src="./assets/Projects/4.1.RAG.png" alt="RAG Chatbot Project" />
               <img src="./assets/Projects/4.2.RAG.jpg" alt="RAG Chatbot Project" />
             </div>
-            <p class="accordion-description">CUBE Consulting RAG Chatbot</p>
+            <p class="accordion-description">I built a RAG-powered chatbot as part of a team of seven engineers at CUBE 
+              Consulting, collaborating with the Chicago-based ticket brokerage Ticket Attendant to improve internal operations.
+               The chatbot leverages retrieval-augmented generation with multiple ticketing and media data sources to provide 
+               real-time data analysis and intelligent query handling. Developed in an agile environment, it delivers advanced 
+               UI-driven insights and streamlines workflows for the brokerage’s operations.</p>
             <div class="accordion-btn-container">
-              <button class="btn btn-color-2 project-card-btn" onclick="window.open('', '_blank')">
-                Link
+              <button class="btn btn-color-2 project-card-btn" onclick="window.open('https://www.ticketattendant.com/', '_blank')">
+                More Info
               </button>
             </div>
           </div>
@@ -368,11 +393,11 @@
         <div class="accordion-item">
           <div class="accordion-header" onclick="toggleAccordion(4)">
             <div class="header-top">
-              <h3 class="accordion-title">JobWire</h3>
+              <h3 class="accordion-title">JobWire: Streamlined Job Searching</h3>
               <p class="accordion-date">Aug 2024 - Dec 2024</p>
             </div>
             <div class="header-bottom">
-              <p class="tech-stack-text">Python, Web Scraping, API, SMTP</p>
+              <p class="tech-stack-text">Python, REST API, gspread, sqlite 3, SMTP</p>
               <span class="accordion-icon">+</span>
             </div>
           </div>
@@ -381,10 +406,15 @@
               <img src="./assets/Projects/3.1.jobwire.png" alt="JobWire Project" />
               <img src="./assets/Projects/3.2.jobwire.png" alt="JobWire Project" />
             </div>
-            <p class="accordion-description">CS 221 Job Wire (Scraper/API/Emailing/SMTP)</p>
+            <p class="accordion-description">I worked with three other engineers to build a platform that simplifies the job 
+              and internship search for students navigating a competitive tech market. Users submit their personal details 
+              and desired job types through a Google Form, and the system delivers personalized emails with curated job 
+              postings that match their interests. By automating the process of finding and sending relevant opportunities, 
+              the platform helps users explore a wider range of openings and increases their chances of securing positions, 
+              turning a tedious and overwhelming process into a more efficient and manageable experience.</p>
             <div class="accordion-btn-container">
-              <button class="btn btn-color-2 project-card-btn" onclick="window.open('', '_blank')">
-                Link
+              <button class="btn btn-color-2 project-card-btn" onclick="window.open('https://docs.google.com/presentation/d/1ngacH_M0d2ToEoWLYp3hKze1KngD-62uYdtPulQrH0E/edit?usp=sharing', '_blank')">
+                More Info
               </button>
             </div>
           </div>
@@ -394,11 +424,11 @@
         <div class="accordion-item">
           <div class="accordion-header" onclick="toggleAccordion(5)">
             <div class="header-top">
-              <h3 class="accordion-title">Netlify</h3>
+              <h3 class="accordion-title">Netlify Hosted Personal Website</h3>
               <p class="accordion-date">Jan 2024 - May 2024</p>
             </div>
             <div class="header-bottom">
-              <p class="tech-stack-text">HTML, CSS, JavaScript</p>
+              <p class="tech-stack-text">Netlify, HTML, CSS, JavaScript (prompted using Claude/CoPilot)</p>
               <span class="accordion-icon">+</span>
             </div>
           </div>
@@ -407,10 +437,14 @@
               <img src="./assets/Projects/2.1.personalwebsite.png" alt="Netlify Project" />
               <img src="./assets/Projects/2.2.personalwebsite.jpg" alt="Netlify Project" />
             </div>
-            <p class="accordion-description">Personal Website</p>
+            <p class="accordion-description">I built a personal website hosted on Netlify using HTML, CSS, and JavaScript, 
+              with guidance from AI tools like Claude and GitHub Copilot. While front-end development isn't my primary 
+              interest, I saw this as an opportunity to showcase my portfolio and gain a foundational understanding of 
+              full-stack development. The project also allowed me to explore how AI can assist in coding efficiently without 
+              relying on it completely, helping me become a more effective and independent developer.</p>
             <div class="accordion-btn-container">
-              <button class="btn btn-color-2 project-card-btn" onclick="window.open('', '_blank')">
-                Link
+              <button class="btn btn-color-2 project-card-btn" onclick="window.open('https://neilshastri.netlify.app/', '_blank')">
+                (While True)
               </button>
             </div>
           </div>
@@ -420,11 +454,11 @@
         <div class="accordion-item">
           <div class="accordion-header" onclick="toggleAccordion(6)">
             <div class="header-top">
-              <h3 class="accordion-title">Lung</h3>
+              <h3 class="accordion-title">Lung Disease Predictive Regression</h3>
               <p class="accordion-date">Aug 2023 - Dec 2023</p>
             </div>
             <div class="header-bottom">
-              <p class="tech-stack-text">Python, Machine Learning, TensorFlow</p>
+              <p class="tech-stack-text">Python, TensorFlow, NumPy, Pandas, scikit-learn, Kaggle, Flask</p>
               <span class="accordion-icon">+</span>
             </div>
           </div>
@@ -433,18 +467,25 @@
               <img src="./assets/Projects/1.1.Lung.jpg" alt="Lung Disease Prediction Model Project" />
               <img src="./assets/Projects/1.2.Lung.png" alt="Lung Disease Prediction Model Project" />
             </div>
-            <p class="accordion-description">CS 124H Lung Disease Prediction Model</p>
+            <p class="accordion-description">Under the guidance of a graduate mentee, I worked on a team of three other students 
+              to develop a predictive regression model for lung disease, focusing primarily on data collection and cleaning. 
+              I also helped design an intuitive user interface in Figma, incorporating user feedback to optimize usability. 
+              This project provided an introduction to team-based development, giving me hands-on experience in collaborative 
+              workflows, preprocessing data, and connecting the predictive model to a functional application via Flask.</p>
             <div class="accordion-btn-container">
-              <button class="btn btn-color-2 project-card-btn" onclick="window.open('', '_blank')">
-                Link
+              <button class="btn btn-color-2 project-card-btn" onclick="window.open('https://www.kaggle.com/datasets/meirnizri/covid19-dataset', '_blank')">
+                More Info
               </button>
             </div>
           </div>
         </div>
 
       </div>
+      <div class="projects-button-container">
+        <button class="btn btn-color-2 toggle-projects-btn" id="toggleProjectsBtn" onclick="toggleProjects()">See More</button>
+      </div>
       <img
-        src="./assets/arrow.png"
+        src="./assets/Icons/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#contact'"
@@ -456,7 +497,7 @@
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
-            src="./assets/email.png"
+            src="./assets/Icons/email.png"
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
@@ -464,7 +505,7 @@
         </div>
         <div class="contact-info-container">
           <img
-            src="./assets/linkedin.png"
+            src="./assets/Icons/linkedin.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
@@ -484,7 +525,7 @@
         </div>
       </nav>
       <p>Built by Neil Shastri. Currently adding new features...</p>
-      <img src="./assets/contact.gif" alt="Image above footer" class="image-above-footer" />
+      <img src="./assets/Icons/contact.gif" alt="Image above footer" class="image-above-footer" />
     </footer>
     <script src="script.js"></script>
   </body>
